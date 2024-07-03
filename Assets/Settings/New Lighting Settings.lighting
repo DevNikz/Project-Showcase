@@ -19,7 +19,7 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_LightmapSizeFixed: 1
   m_UseMipmapLimits: 1
-  m_BakeResolution: 35
+  m_BakeResolution: 30
   m_Padding: 3
   m_LightmapCompression: 3
   m_AO: 1
@@ -33,7 +33,7 @@ LightingSettings:
   m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
   m_ExportTrainingData: 0
   m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
+  m_RealtimeResolution: 1
   m_ForceWhiteAlbedo: 0
   m_ForceUpdates: 0
   m_PVRCulling: 1
@@ -42,7 +42,7 @@ LightingSettings:
   m_PVRSampleCount: 512
   m_PVREnvironmentSampleCount: 256
   m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 8
+  m_LightProbeSampleCountMultiplier: 6
   m_PVRBounces: 3
   m_PVRMinBounces: 2
   m_PVREnvironmentImportanceSampling: 1
