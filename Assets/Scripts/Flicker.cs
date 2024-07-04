@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Flicker : MonoBehaviour
@@ -13,6 +14,9 @@ public class Flicker : MonoBehaviour
     public int x;
     Renderer rendererObj;
 
+    AudioSource audioSource;
+    AudioClip audioClip;
+
     void Start() {
         x = 0;
         parentObj = transform.parent.gameObject;
@@ -22,6 +26,10 @@ public class Flicker : MonoBehaviour
 
         lightObj = GetComponent<Light>();
         timer = Random.Range(minTime, maxTime);
+
+        audioSource = parentObj.GetComponent<AudioSource>();
+        audioClip = Resources.Load<AudioClip>("SFX/FlickerSFX");
+        audioSource.clip = audioClip;
     }
 
     void Update() {
@@ -43,6 +51,9 @@ public class Flicker : MonoBehaviour
 
             lightObj.enabled = !lightObj.enabled;
             timer = Random.Range(minTime,maxTime);
+            
+            Debug.Log("Flicker");
+            audioSource.Play();
         }
     }
 }
