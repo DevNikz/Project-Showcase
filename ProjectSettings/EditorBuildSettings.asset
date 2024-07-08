@@ -5,20 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Player.unity
-    guid: 24064021908642d4087fbc0ef3cc6fe0
   - enabled: 1
-    path: Assets/Scenes/Harold's Pizzeria(AJ.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Main.unity
-    guid: 6f721e601091f0844a4230e57f1ea748
-  - enabled: 0
-    path: Assets/Scenes/Storage.unity
-    guid: fa246491397935441b5d65623ba6659a
-  - enabled: 0
-    path: Assets/Scenes/Backstage.unity
-    guid: 0e80fe1380be7d14c9bd74d3a4deb5e6
+    path: Assets/Scenes/Harold's Pizzeria.unity
+    guid: 7ec10eb5d73150b46bc69df92894ce71
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
