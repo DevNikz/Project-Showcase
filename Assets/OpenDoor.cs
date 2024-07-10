@@ -14,12 +14,13 @@ public class OpenDoor : MonoBehaviour
 
     void Update() {
         if(playerDetected) {
-            if(parent.transform.position.y < 5.25f) {
+            Debug.Log("Detected!");
+            if(parent.transform.position.y < 6f) {
                 parent.transform.Translate(0f, 2.5f * Time.fixedDeltaTime, 0f);
             }
         }
         else {
-            if(parent.transform.position.y > 2f) {
+            if(parent.transform.position.y > 2.5f) {
                 parent.transform.Translate(0f, -2.5f * Time.fixedDeltaTime, 0f);
             }
         }
