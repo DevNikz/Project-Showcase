@@ -9,8 +9,8 @@ public class FlashlightController : MonoBehaviour
     private bool enableLight;
 
     void Awake() {
-        light1 = transform.Find("Light1").gameObject;
-        light2 = transform.Find("Light2").gameObject;
+        light1 = transform.Find("NarrowFlashlight").gameObject;
+        light2 = transform.Find("WideFlashlight").gameObject;
         enableLight = true;
     }
 
